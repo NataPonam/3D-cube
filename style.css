@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 label {
@@ -96,7 +97,7 @@ input[type='range']::-moz-slider-thumb {
 .view {
   display: grid;
   place-items: center;
-  min-block-size: 60vh;
+  min-block-size: 50vh;
   padding: 60px;
   overflow: hidden;
   background-color: transparent;
@@ -110,7 +111,7 @@ input[type='range']::-moz-slider-thumb {
 }
 
 .button {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   width: 300px;
   height: 50px;
