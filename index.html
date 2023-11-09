@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D-Cube</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./cube.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="controls">
+        <label>
+          <span>Cube rotateX</span>
+          <input
+            id="rangeX"
+            class="range"
+            name="cube-rotate-x"
+            type="range"
+            min="-360"
+            max="360"
+            step="1"
+            oninput="change ()"
+          />
+          <p class="deg" id="one">0</p>
+        </label>
+        <label>
+          <span>Cube rotateY</span>
+          <input
+            id="rangeY"
+            class="range"
+            name="cube-rotate-y"
+            type="range"
+            min="-360"
+            max="360"
+            step="1"
+            oninput="change ()"
+          />
+          <p class="deg" id="two">0</p>
+        </label>
+      </form>
+      <button class="button" onclick="reset()">start again</button>
+      <div class="view">
+        <div class="cube" id="cube">
+          <div class="side top" id="top">Content</div>
+          <div class="side right">Mentor</div>
+          <div class="side bottom">Tutor</div>
+          <div class="side left">Project</div>
+          <div class="side front">Student</div>
+          <div class="side back">Review</div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="./script.js"></script>
+  </body>
+</html>
